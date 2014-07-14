@@ -10,10 +10,10 @@ body {
 }
 
 
-.pic, img { 
-    float: left;
+.pic img { 
     width: 100%;
     border-radius: 5px;
+
 }
 
 
@@ -45,29 +45,13 @@ h1 {
 NAVIGATION
 ***********************************/
 
+.nav {
+    margin-left: -3.2%;
+}
 
-.nav,
 .nav li {
 	display: inline;
-}
-
-.nav li {
-	margin-right: 10%;
-}
-
-
-/**********************************
-PAGE: Home
-***********************************/
-
-#main_img img {
-	max-width: 70%;
-	margin: 0 15% 0 15%;
-	opacity: 100%;
-}
-
-#main_img {
-	max-width: 100%;
+    margin-right: 5%;
 }
 
 
@@ -76,10 +60,18 @@ FOOTER
 ***********************************/
 
 footer {
-	margin: 5% 20% 1% 18%;
+	margin: 10% 20% 1% 15%;
 	font-size: .80em;
 }
 
+
+/**********************************
+CONTACT
+***********************************/
+
+.wrapper {
+    margin-left: 15%;
+}
 
 
 /**********************************
@@ -88,29 +80,43 @@ MEDIA QUERIES
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1680px) {
-    .pic, div {
+    .pic {
         width: 30%;
     }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-    .pic, div {
+    .pic {
         width: 45%;
     }
 
-    h1 {
-        margin-right: 0;
+    .nav {
+        margin-left: -5%%;
     }
+    
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-    .pic, div {
+    .pic {
         width: 70%;
+    }
+
+    .nav {
+        margin-left: -10%%;
     }
 }
 
 
 
+/**********************************
+PAGE: Home
+***********************************/
 
+#main_img img {
+    width: 60%;
+    margin: 0 15% 0 15%;
+    opacity: 100%;
+    border-radius: 5px;
+}
